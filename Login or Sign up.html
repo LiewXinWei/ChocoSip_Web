@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login/ Sign up</title>
+<link href="style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+<div class="bodylogin">
+	
+	<div class="wrapper">
+		<span class="bg-animate"></span>
+		<span class="bg-animate2"></span>
+
+        <!-- Add Hidden Toggle Inputs -->
+        <input type="radio" id="toggle-login" name="form-toggle" hidden checked>
+        <input type="radio" id="toggle-signup" name="form-toggle" hidden>
+		
+		<!-- Login Form -->
+		<div class="form-box login">
+			<h2 class="animation">Login</h2>
+			<form action="#">
+				<div class="input-box animation">
+					<input type="text" required>
+					<label>Username</label>
+					<i class='bx bxs-user'></i>
+				</div>
+				<div class="input-box">
+					<input type="password" required>
+					<label>Password</label>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+				<button type="submit" class="btn">Login</button>
+				<div class="logreg-link">
+					<p>Don't have an account? <label for="toggle-signup" class="register-link">Sign Up</label></p>
+				</div>
+			</form>
+			<a href="index.html" class="back-btn">← Back to Home</a>
+		</div>
+		<div class="info-text login">
+			<h2>Welcome Back!</h2>
+			<p>Explore your favorites, check out our latest treats, and make your day a little sweeter with ChocoSip. Let’s get started!</p>
+		</div>
+		
+		<!-- Sign Up Form -->
+		<div class="form-box register">
+			<h2>Sign Up</h2>
+			<form action="#">
+				<div class="input-box">
+					<input type="text" required>
+					<label>Username</label>
+					<i class='bx bxs-user'></i>
+				</div>
+				
+				<div class="input-box">
+					<input type="text" required>
+					<label>Email</label>
+					<i class='bx bxs-envelope'></i>
+				</div>
+				
+				<div class="input-box">
+					<input type="password" required>
+					<label>Password</label>
+					<i class='bx bxs-lock-alt'></i>
+				</div>
+				<button type="submit" class="btn">Sign Up</button>
+				<div class="logreg-link">
+					<p>Already have an account? <label for="toggle-login" class="switch-link">Login</label></p>
+				</div>
+			</form>
+			<a href="index.html" class="back-btn">← Back to Home</a>
+		</div>
+		<div class="info-text register">
+			<h2>Welcome Back!</h2>
+			<p>Explore your favorites, check out our latest treats, and make your day a little sweeter with ChocoSip. Let’s get started!</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
